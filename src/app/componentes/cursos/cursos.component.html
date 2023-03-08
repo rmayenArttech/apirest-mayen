@@ -1,0 +1,24 @@
+<app-nav-bar></app-nav-bar>
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Columna id -->
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+      <mat-cell *matCellDef="let curso"> {{curso.id}} </mat-cell>
+    </ng-container>
+  
+    <!-- Columna nombreCurso -->
+    <ng-container matColumnDef="nombreCurso">
+      <mat-header-cell *matHeaderCellDef> Nombre del curso </mat-header-cell>
+      <mat-cell *matCellDef="let curso"> {{curso.nombreCurso}} </mat-cell>
+    </ng-container>
+  
+    <!-- Columna profesorAsignado -->
+    <ng-container matColumnDef="profesorAsignado">
+      <mat-header-cell *matHeaderCellDef> Profesor asignado </mat-header-cell>
+      <mat-cell *matCellDef="let curso"> {{curso.profesorAsignado}} </mat-cell>
+    </ng-container>
+  
+    <!-- Agregar las columnas a la tabla -->
+    <mat-header-row *matHeaderRowDef="columnas"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: columnas;"></mat-row>
+  </mat-table>

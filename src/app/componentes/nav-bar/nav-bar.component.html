@@ -1,0 +1,14 @@
+<div class="bg-dark text-light bg-dark">
+    <div class="container">
+        <nav class="navbar navCustom navbar-dark bg-dark">
+            <div class="mb-0 h5">APIrest Mayen
+                <button mat-button [matMenuTriggerFor]="opciones" class="text-light bg-dark "> <mat-icon >reorder</mat-icon></button>
+                <mat-menu #opciones="matMenu">
+                    <button mat-menu-item routerLink="/formulario/">Formulario</button>
+                    <button mat-menu-item routerLink="/cursos/">Cursos</button>
+                    <button mat-menu-item (click)="logout()">logout</button>
+                </mat-menu>
+            </div>
+        </nav>
+    </div>
+</div>
