@@ -1,6 +1,14 @@
 # ApirestMayen
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
+Poryecto Angular que incluye consumo de apirest en mockapi y el uso de guards para poder acceder a la pagina principal de la aplicacion con las credenciales:
+
+credenciales
+usuario: user
+contraseña: password
+
+proyecto mockapi:
+https://6407cf348ee73db92e322f38.mockapi.io/api/cursos
+https://6407cf348ee73db92e322f38.mockapi.io/api/alumnos
 
 ## Development server
 
